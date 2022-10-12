@@ -1,0 +1,6 @@
+{
+  "move_hoch" : "w",
+  "move_runter" : "s",
+  "move_links" : "a",
+  "move_rechts" : "d"
+}
