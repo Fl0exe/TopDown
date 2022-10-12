@@ -1,4 +1,4 @@
-# TopDown Projekt
+# 👾 TopDown Projekt
 
 Hallo, 
 
@@ -14,10 +14,10 @@ Dieses Projekt besteht hauptsächlich aus `Java` und wird folgende Features habe
 - ##### Dungeons
 
 <br /><br /><br /><br /><br /><br />
-### Förderungen
+## 🤑 Förderungen
 ![This is an image](https://www.gws-loerrach.de/templates/webezeheh/logo.png)
 
-<br /><br /><br /><br /><br />
+<br /><br /><br /><br />
 ## ⚠️ Copyright / Warranty
 <br /><br /><br />
 > Copyright (c) 2022 Florian Pabler, Lukas Meeder<br />
