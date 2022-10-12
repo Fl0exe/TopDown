@@ -2,7 +2,7 @@
 
 Hallo, 
 
-dies ist unser Spiel `TopDown` als Schulprojekt für das Berufskolleg.
+dies ist unser Spiel `TopDown` als Schulprojekt für das Berufskolleg.<br /><br />
 
 Dieses Projekt besteht hauptsächlich aus `Java` und wird folgende Features haben:
 
@@ -13,11 +13,11 @@ Dieses Projekt besteht hauptsächlich aus `Java` und wird folgende Features habe
 - ##### Charakterauswahl als `Schwertkämpfer`, ` Magier` oder `Bogenschütze`
 - ##### Dungeons
 
-
+<br /><br /><br />
 ### Förderungen
 ![This is an image](https://www.gws-loerrach.de/templates/webezeheh/logo.png)
 
-
+<br /><br />
 ## ⚠️ Copyright / Warranty
 
 > Copyright (c) 2022 Florian Pabler, Lukas Meeder
