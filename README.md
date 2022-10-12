@@ -13,6 +13,12 @@ Dieses Projekt besteht hauptsächlich aus `Java` und wird folgende Features habe
 - ##### Charakterauswahl als `Schwertkämpfer`, ` Magier` oder `Bogenschütze`
 - ##### Dungeons
 
+<br/>
+
+![This is an image](https://img.shields.io/github/issues/Fl0exe/TopDown)
+![This is an image](https://img.shields.io/github/forks/Fl0exe/TopDown)
+![This is an image](https://img.shields.io/github/stars/Fl0exe/TopDown)
+
 <br/><br/>
 
 <details><summary>🤑 Förderungen</summary><p>
