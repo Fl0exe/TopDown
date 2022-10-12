@@ -1,4 +1,4 @@
-import bin.Kontrolle;
+import binaries.Kontrolle;
 
 public class Main {
 

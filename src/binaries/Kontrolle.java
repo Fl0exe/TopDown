@@ -1,4 +1,4 @@
-package bin;
+package binaries;
 
 public class Kontrolle {
 	
