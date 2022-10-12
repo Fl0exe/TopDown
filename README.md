@@ -14,11 +14,13 @@ Dieses Projekt besteht hauptsächlich aus `Java` und wird folgende Features habe
 - ##### Dungeons
 
 <br/>
-
-![This is an image](https://img.shields.io/github/issues/Fl0exe/TopDown)
-![This is an image](https://img.shields.io/github/forks/Fl0exe/TopDown)
+<div align="center">
+  
+![This is an image](https://img.shields.io/github/issues/Fl0exe/TopDown)<br/>
+![This is an image](https://img.shields.io/github/forks/Fl0exe/TopDown)<br/>
 ![This is an image](https://img.shields.io/github/stars/Fl0exe/TopDown)
-
+  
+</div>
 <br/><br/>
 
 <details><summary>🤑 Förderungen</summary><p>
