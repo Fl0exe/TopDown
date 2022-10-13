@@ -34,7 +34,7 @@ public class Kontrolle implements MouseListener, KeyListener, FocusListener {
 
 		while (spielAmLaufen) { // Game Loop
 
-			while (!spielIstPausiert) { // Sperrt den code ein
+			while (spielIstPausiert) { // Sperrt den code ein
 
 			}
 
