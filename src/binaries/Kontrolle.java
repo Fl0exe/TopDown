@@ -25,10 +25,9 @@ public class Kontrolle implements MouseListener, KeyListener, FocusListener {
 
 	public void starteSpiel() { // Hier Gehts Los!
 
-		zeichenflaeche.macheZeichenFlaecheSichtbar(); // Init ZeichenFlaeche!
+		zeichenflaeche.macheZeichenFlaecheSichtbar(true); // Init ZeichenFlaeche!
 		zeichenflaeche.requestFocus();
 		zeichenflaeche.stopAutomatischesZeichnen();
-		zeichenflaeche.macheVollbild();
 		zeichenflaeche.addMouseListener(this);
 		zeichenflaeche.addKeyListener(this);
 		zeichenflaeche.addFocusListener(this);

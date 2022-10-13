@@ -61,7 +61,7 @@ public class ZeichenFlaeche15 extends JPanel {
 	 * Zeichenflaeche leer.
 	 * </p>
 	 */
-	public void macheZeichenFlaecheSichtbar() {
+	public void macheZeichenFlaecheSichtbar(boolean fullscreen) {
 
 		initializeColors(); // Call own method to create an array of possible colors.
 
@@ -69,8 +69,29 @@ public class ZeichenFlaeche15 extends JPanel {
 		fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		fenster.setTitle("ZeichenflÃ¤che");
 		fenster.setBackground(aktuelleHintergrundfarbe);
+		
+		/*
+		 * Lukas Meeder
+		 * 14.10.2022 00:36 Uhr
+		 * 
+		 * NOTE: Scheinbar muss das setUndecorated(true) passieren, bevor das Fenster sichtbar gemacht wird,
+		 * 		 daher dann der Fehler "Window is Displayable.
+		 * 
+		 * Habe das jetzt einfach mal als Parameter gemacht.
+		 */
+		if(fullscreen){
+			fenster.setExtendedState(Frame.MAXIMIZED_BOTH);
+			fenster.setResizable(false);
+			fenster.setUndecorated(true);
+		}
 
-		this.setPreferredSize(new Dimension((int) (screenSize.width * 0.5), (int) (screenSize.height * 0.5)));
+		/*
+		 * Lukas Meeder
+		 * 14.10.2022 00:44 Uhr
+		 * 
+		 * NOTE: Habe die PreferredSize mal so gemacht, dass Vollbild ist. Weiß nicht wofür das vorherige war.
+		 */
+		this.setPreferredSize(new Dimension(screenSize.width, screenSize.height));
 		this.setBackground(aktuelleHintergrundfarbe);
 		this.setOpaque(true);
 		fenster.setContentPane(this);
@@ -89,16 +110,6 @@ public class ZeichenFlaeche15 extends JPanel {
 		// Die Timer-Funktion fï¿½r das zeichnen (auch wenn es nicht so aussieht...).
 		timer = new ScheduledThreadPoolExecutor(1);
 		timer.scheduleAtFixedRate(renderEngine, 50, 16, TimeUnit.MILLISECONDS);
-	}
-
-	public void maximieren() {
-		fenster.setExtendedState(Frame.MAXIMIZED_BOTH);
-	}
-
-	public void macheVollbild() {
-		maximieren();
-		fenster.setResizable(false);
-		fenster.setUndecorated(true);
 	}
 
 	public void setzeTitel(String titel) {
