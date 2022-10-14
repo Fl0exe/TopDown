@@ -26,62 +26,56 @@ public class Kontrolle implements MouseListener, KeyListener, FocusListener {
 	public void starteSpiel() { // Hier Gehts Los!
 
 		zeichenflaeche.macheZeichenFlaecheSichtbar(); // Init ZeichenFlaeche!
-		zeichenflaeche.requestFocus();
 		zeichenflaeche.stopAutomatischesZeichnen();
-		zeichenflaeche.macheVollbild();
-		zeichenflaeche.addMouseListener(this);
+		zeichenflaeche.requestFocus();
+		zeichenflaeche.maximieren(); // TODO vollbild richtig machen
+		zeichenflaeche.addMouseListener(this); // füge listener hinzu
 		zeichenflaeche.addKeyListener(this);
 		zeichenflaeche.addFocusListener(this);
 
 		while (spielAmLaufen) { // Game Loop
 
-			while (spielIstPausiert) { // Sperrt den code ein
+			
 
-			}
+			
 
 			try {
 				Thread.sleep(15); // Pause im GameLoop!
-			} catch (InterruptedException e) {
+			} catch (InterruptedException event) {
 			}
 
 		}
 
 	}
 
-	public void mouseClicked(MouseEvent e) { // Unused
+	public void mouseClicked(MouseEvent event) { // Unused
 	}
 
-	public void mousePressed(MouseEvent e) {
+	public void mouseEntered(MouseEvent event) { // Unused
+	}
+
+	public void mouseExited(MouseEvent event) { // Unused
+	}
+
+	public void keyTyped(KeyEvent event) { // Unused
+	}
+
+	public void mousePressed(MouseEvent event) {
 		// TODO mache sie mal
 
 	}
 
-	public void mouseReleased(MouseEvent e) {
+	public void mouseReleased(MouseEvent event) {
 		// TODO mache sie mal
 
 	}
 
-	public void mouseEntered(MouseEvent e) {
-		// TODO das spiel soll weiter gehen
-
-	}
-
-	public void mouseExited(MouseEvent e) {
-		// TODO das Spiel soll pausiert werden
-
-	}
-
-	public void keyTyped(KeyEvent e) {
+	public void keyPressed(KeyEvent event) {
 		// TODO mache sie mal
 
 	}
 
-	public void keyPressed(KeyEvent e) {
-		// TODO mache sie mal
-
-	}
-
-	public void keyReleased(KeyEvent e) {
+	public void keyReleased(KeyEvent event) {
 		// TODO mache sie mal
 
 	}
@@ -90,7 +84,7 @@ public class Kontrolle implements MouseListener, KeyListener, FocusListener {
 		spielIstPausiert = false; // Resume das Spiel
 	}
 
-	public void focusLost(FocusEvent e) {
+	public void focusLost(FocusEvent event) {
 		spielIstPausiert = true; // Pausiere das Spiel
 	}
 

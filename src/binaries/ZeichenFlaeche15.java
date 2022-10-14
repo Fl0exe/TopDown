@@ -99,6 +99,7 @@ public class ZeichenFlaeche15 extends JPanel {
 		maximieren();
 		fenster.setResizable(false);
 		fenster.setUndecorated(true);
+
 	}
 
 	public void setzeTitel(String titel) {
