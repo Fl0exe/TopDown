@@ -25,17 +25,17 @@ public class Kontrolle implements MouseListener, KeyListener, FocusListener {
 
 	public void starteSpiel() { // Hier Gehts Los!
 
-		zeichenflaeche.macheZeichenFlaecheSichtbar(); // Init ZeichenFlaeche!
-		zeichenflaeche.stopAutomatischesZeichnen();
+		zeichenflaeche.macheZeichenFlaecheSichtbar(true); // Init ZeichenFlaeche!
 		zeichenflaeche.requestFocus();
-		zeichenflaeche.maximieren(); // TODO vollbild richtig machen
-		zeichenflaeche.addMouseListener(this); // füge listener hinzu
+		zeichenflaeche.stopAutomatischesZeichnen();
+		zeichenflaeche.addMouseListener(this);
 		zeichenflaeche.addKeyListener(this);
 		zeichenflaeche.addFocusListener(this);
 
 		while (spielAmLaufen) { // Game Loop
 
-			
+			while (!spielIstPausiert) { // Sperrt den code ein
+
 
 			
 
