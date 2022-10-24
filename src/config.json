@@ -6,6 +6,6 @@
     "move_rechts" : "d",
     "move_dash" : "SPACE",
     "combat_main_attack" : "mButton1",
-    "combaT_seondary_attack" : "mButton2"
+    "combat_seondary_attack" : "mButton2"
   }
 }
