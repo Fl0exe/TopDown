@@ -1,6 +1,6 @@
 package entities;
 
-// TODO create subclass NichtSpieler
+// TODO create subclass NichtSpieler + fix architecture
 
 //Imports
 import java.awt.Image;
