@@ -40,7 +40,7 @@ public class Entity {
 		}
 
 		// Game
-		this.renderEngine = renderEngine;
+		this.zeichenFlaeche = renderEngine;
 		this.game = createdInGame;
 
 		// Setting the Behaviour of the Entity
@@ -87,7 +87,7 @@ public class Entity {
 		// Print into console
 		System.out.println("New Entity with id " + id + " created!");
 
-		this.renderEngine = renderEngine;
+		this.zeichenFlaeche = renderEngine;
 	}
 
 // Attributes
@@ -116,18 +116,18 @@ public class Entity {
 	private Image defaultPicture;
 	protected long lastTimestamp;
 	protected ArrayList<Image> pictures;
-	protected ZeichenFlaeche15 renderEngine;
+	protected ZeichenFlaeche15 zeichenFlaeche;
 	protected Behaviour behaviour;
 	protected Kontrolle game;
 
 // Methods
 	public void move() {
 		// "Move" the Entity
-		renderEngine.loeschen(this.id);
+		zeichenFlaeche.loeschen(this.id);
 		if (currentPicture != null) {
-			renderEngine.setzeBild(id, currentPicture, x, y, hoehe, breite);
+			zeichenFlaeche.setzeBild(id, currentPicture, x, y, hoehe, breite);
 		} else {
-			renderEngine.setzeBild(id, defaultPicture, x, y, hoehe, breite);
+			zeichenFlaeche.setzeBild(id, defaultPicture, x, y, hoehe, breite);
 		}
 
 		lastTimestamp = System.currentTimeMillis();
@@ -234,11 +234,11 @@ public class Entity {
 	}
 
 	public ZeichenFlaeche15 getRenderEngine() {
-		return renderEngine;
+		return zeichenFlaeche;
 	}
 
 	public void setRenderEngine(ZeichenFlaeche15 renderEngine) {
-		this.renderEngine = renderEngine;
+		this.zeichenFlaeche = renderEngine;
 	}
 
 	public Behaviour getBehaviour() {
