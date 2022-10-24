@@ -57,7 +57,16 @@ public class Spieler extends Entity {
 		}
 
 		// "Move" the Entity
-		super.move();
+
+		zeichenFlaeche.loeschen(this.id);
+		if (currentPicture != null) {
+			zeichenFlaeche.setzeBild(id, currentPicture, (zeichenFlaeche.getWidth() / 2) - (breite / 2),
+					(zeichenFlaeche.getHeight() / 2) - (hoehe / 2), hoehe, breite);
+		} else {
+			zeichenFlaeche.setzeBild(id, defaultPicture, (zeichenFlaeche.getWidth() / 2) - (breite / 2),
+					(zeichenFlaeche.getHeight() / 2) - (hoehe / 2), hoehe, breite);
+		}
+
 	}
 
 	private double calcSpeed() {

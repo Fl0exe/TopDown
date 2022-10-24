@@ -1,5 +1,7 @@
 package entities;
 
+// TODO create subclass NichtSpieler
+
 //Imports
 import java.awt.Image;
 import java.util.ArrayList;
@@ -94,7 +96,7 @@ public class Entity {
 	private static ArrayList<Entity> allEntities = new ArrayList<>();
 
 	private static int entityCount = 0; // Start at 1 because Background is id 0
-	private int id;
+	protected int id;
 	private int hp = 1; // Healthpoints
 	private int maxHp = hp;
 	private boolean isAlive = true;
@@ -109,11 +111,11 @@ public class Entity {
 	// buffs
 	private double x;
 	private double y;
-	private int hoehe = 50;
-	private int breite = 50;
+	protected int hoehe = 50;
+	protected int breite = 50;
 	protected double speed = 0.5;
-	private Image currentPicture;
-	private Image defaultPicture;
+	protected Image currentPicture;
+	protected Image defaultPicture;
 	protected long lastTimestamp;
 	protected ArrayList<Image> pictures;
 	protected ZeichenFlaeche15 zeichenFlaeche;
