@@ -1,28 +1,29 @@
 package game.behaviours;
-import entities.Player;
+
+import entities.Spieler;
 
 /**
-*
-* @author Lukas Meeder
-* @version 1.0 (20.10.2022)
-*
-*/
+ *
+ * @author Lukas Meeder
+ * @version 1.0 (20.10.2022)
+ *
+ */
 
 public class Enemy extends Behaviour {
 
-	public Player targetPlayer;
+	public Spieler targetPlayer;
 
-	public Player getTargetPlayer() {
+	public Spieler getTargetPlayer() {
 		return targetPlayer;
 	}
 
-	public void setTargetPlayer(Player targetPlayer) {
+	public void setTargetPlayer(Spieler targetPlayer) {
 		this.targetPlayer = targetPlayer;
 		System.out.println("A new target has been assigned to entity " + this);
 	}
 
-	public void scream()
-	{
+	@Override
+	public void scream() {
 		// Print a text if behaviour is null
 		System.out.println("Behaviour is Enemy!");
 	}

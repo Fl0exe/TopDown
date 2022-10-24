@@ -69,27 +69,26 @@ public class ZeichenFlaeche15 extends JPanel {
 		fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		fenster.setTitle("ZeichenflÃ¤che");
 		fenster.setBackground(aktuelleHintergrundfarbe);
-		
+
 		/*
-		 * Lukas Meeder
-		 * 14.10.2022 00:36 Uhr
-		 * 
-		 * NOTE: Scheinbar muss das setUndecorated(true) passieren, bevor das Fenster sichtbar gemacht wird,
-		 * 		 daher dann der Fehler "Window is Displayable.
-		 * 
+		 * Lukas Meeder 14.10.2022 00:36 Uhr
+		 *
+		 * NOTE: Scheinbar muss das setUndecorated(true) passieren, bevor das Fenster
+		 * sichtbar gemacht wird, daher dann der Fehler "Window is Displayable.
+		 *
 		 * Habe das jetzt einfach mal als Parameter gemacht.
 		 */
-		if(fullscreen){
+		if (fullscreen) {
 			fenster.setExtendedState(Frame.MAXIMIZED_BOTH);
 			fenster.setResizable(false);
 			fenster.setUndecorated(true);
 		}
 
 		/*
-		 * Lukas Meeder
-		 * 14.10.2022 00:44 Uhr
-		 * 
-		 * NOTE: Habe die PreferredSize mal so gemacht, dass Vollbild ist. Weiß nicht wofür das vorherige war.
+		 * Lukas Meeder 14.10.2022 00:44 Uhr
+		 *
+		 * NOTE: Habe die PreferredSize mal so gemacht, dass Vollbild ist. Weiß nicht
+		 * wofür das vorherige war.
 		 */
 		this.setPreferredSize(new Dimension(screenSize.width, screenSize.height));
 		this.setBackground(aktuelleHintergrundfarbe);
